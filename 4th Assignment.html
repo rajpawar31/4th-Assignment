@@ -1,0 +1,44 @@
+class company
+{
+    constructor(compname,country,CEO)
+    {
+        this.compname=compname;
+        this.country=country;
+        this.CEO=CEO;
+    }
+    getCarname()
+    {
+        return this.compname;
+    }
+}
+
+class car extends company
+{
+    constructor(carname,compname,country,CEO,established,group)
+    {
+        super(compname,country,owner);
+        this.established=established;
+        this.carname=carname;
+        this.group=group;
+
+    }
+    getModel()
+    {
+        return this.carname;
+    }
+}
+
+ let CarModel1=new car('Audi RS 7 Sportback','AUDI AG','Germany','Markus Duesmann','16 July 1909','Volkswagen');
+ console.log(CarModel1.getModel());
+
+let CarModel2=new car('Ferrari F8','Ferrari','Maranello, Italy','John Elkann','1947','Exor');
+ console.log(CarModel2.getModel());
+
+let CarModel3=new car('Lamborghini Huracan','Automobili Lamborghini S.p.A','Northern Italy','Stephan Winkelmann','May 1963','Volkswagen');
+ console.log(CarModel3.getModel());
+
+let CarModel4=new car('Rolls-Royce Cullinan',' Rolls-Royce automobiles','Manchester,United Kingdom','Warren East','February 2011','Bayerische Motoren Werke AG');
+ console.log(CarModel4.getModel());
+
+let CarModel5=new car('Tesla Model 3','Tesla',' San Carlos, California, United States','Elon Musk ','1 July 2003','SolarCity, Maxwell Technologies');
+ console.log(CarModel5.getModel());
